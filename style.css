@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+html, body{
+    height: 99.9%;
+    width: 100%;
+}
+
+#main{
+    /* background-color: rgb(182, 255, 243); */
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /* justify-content: space-between; */
+    align-self: flex-end;
+    padding: 4% 5% 0 5%;
+    gap: 7em;
+}
+
+#left{
+    height: 100%;
+    width: 47%;
+    /* padding: 1% 2%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#left h1{
+    font-size: 9vw;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 9.2vw;
+}
+
+#bottom-left{
+    /* height: 45%; */
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+#color{
+    width: fit-content;
+    padding: 0.5vw 0.9vw;
+    border-radius: 2.5vw;
+    display: flex;
+    align-items: center;
+    border: 0.04em solid #000000;
+}
+
+#color1{
+    background-color: darkkhaki;
+    height: 2.4vw;
+    width: 2.4vw;
+    border-radius: 50%;
+    margin: 0.2vw;
+}
+
+#color2{
+    background-color: cornflowerblue;
+    height: 2.4vw;
+    width: 2.4vw;
+    border-radius: 50%;
+}
+
+#color h5{
+    font-weight: 700;
+    font-size: 2vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#bottom-left h2{
+    padding: 2vw 0 0.5vw 0;
+    font-size: 2vw;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 2.3vw;
+}
+
+#bottom-left p{
+    font-size: 2vw;
+    font-weight: 500;
+    width: 72%;
+    color: #3c3b3b;
+    line-height: 2.38vw;
+}
+
+#right{
+    height: 100%;
+    width: 33%;
+    /* background-color: rgb(233, 237, 179); */
+    position: relative;
+}
+
+#right-top{
+    height: 6%;
+    width: 100%;
+    /* background-color: rgb(196, 210, 12); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8em 0.7em 0 0;
+}
+
+#right-top h2{
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: 'Trebuchet MS';
+}
+
+#right-top h5{
+    font-size: 1em;
+    font-weight: 600;
+    font-family: 'Trebuchet MS';
+}
+
+#right-top h5 i{
+    color: goldenrod;
+}
+
+#right img{
+    object-fit: cover;
+    width: 100%;
+    height: 93.67%;
+}
+
+#add-to-bag{
+    height: 8em;
+    width: 8em;
+    color: #ffffff;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -14%;
+    top: 20%;
+    position: absolute;
+}
+
+#add-to-bag{
+    font-weight: 600;
+    font-size: 1em;
+}
+
+#rotated{
+    rotate: -90deg;
+    position: absolute;
+    left: -13%;
+    bottom: 2%;
+    transform-origin: 0 0;
+    font-size: 2vw;
+    font-weight: 900;
+    background-color: #0b4324ef;
+    padding: 0 1.2vw;
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 600px) {
+    #main{
+        /* background-color: rgb(182, 255, 243); */
+        display: flex;
+        height: 100%;
+        width: 100%;
+        /* justify-content: space-between; */
+        align-self: flex-start;
+        flex-direction: column;
+        padding: 4% 5% 0 5%;
+        gap: 4vw;
+    }
+    
+    #left{
+        height: fit-content;
+        width: 100%;
+        /* padding: 1% 2%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #left h1{
+        font-size: 18vw;
+        font-weight: 500;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        line-height: 18.3vw;
+    }
+
+    #bottom-left{
+        /* height: 45%; */
+        width: 85%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    }
+
+    #color{
+        width: fit-content;
+        padding: 0.5vw 3vw;
+        border-radius: 2.5vw;
+        display: flex;
+        align-items: center;
+        margin: 2vh 0;
+        border: 0.04vw solid #000000;
+    }
+
+    #color1{
+        background-color: darkkhaki;
+        height: 2.4vw;
+        width: 2.4vw;
+        border-radius: 50%;
+        margin: 0.5vw;
+    }
+
+    #color2{
+        background-color: cornflowerblue;
+        height: 2.4vw;
+        width: 2.4vw;
+        border-radius: 50%;
+    }
+
+    #color h5{
+        font-weight: 700;
+        font-size: 2vw;
+        font-family: Trebuchet MS;
+    }
+
+    #bottom-left h2{
+        padding: 2vw 0 0.5vw 0;
+        font-size: 2vw;
+        font-weight: 600;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        line-height: 2.3vw;
+    }
+
+    #bottom-left p{
+        font-size: 2.2vw;
+        font-weight: 500;
+        width: 72%;
+        color: #3c3b3b;
+        line-height: 2.48vw;
+    }
+        
+    #right{
+        height: auto;
+        width: 100%;
+        /* background-color: rgb(233, 237, 179); */
+        position: relative;
+        /* background-color: rebeccapurple; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    #right-top{
+        height: 6%;
+        width: 100%;
+        /* background-color: rgb(196, 210, 12); */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8vw 0.7vw 0 0;
+    }
+
+    #right-top h2{
+        font-size: 1.5em;
+        font-weight: 600;
+        font-family: 'Trebuchet MS';
+    }
+
+    #right-top h5{
+        font-size: 3vw;
+        font-weight: 600;
+        font-family: 'Trebuchet MS';
+    }
+
+    #right-top h5 i{
+        color: goldenrod;
+    }
+
+    #right img{
+        object-fit: cover;
+        width: 100%;
+        height: 45.67%;
+    }
+
+    #add-to-bag{
+        height: 8em;
+        width: 8em;
+        color: #ffffff;
+        background-color: #000;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 70%;
+        top: 10%;
+        position: absolute;
+    }
+
+    #add-to-bag{
+        font-weight: 600;
+        font-size: 3vw;
+    }
+
+    /* #rotated{ */
+        /* rotate: 0deg; */
+        /* display: none; */
+        /* position: absolute; */
+        /* left: 61%; */
+        /* top: 6%; */
+        /* height: inherit; */
+        /* width: fit-content; */
+        /* transform-origin: 0 0; */
+        /* font-size: 5vw; */
+        /* font-weight: 900; */
+        /* color:greenyellow; */
+        /* background-color: none !important; */
+        /* padding: 1.2vw; */
+    /* } */
+
+}
